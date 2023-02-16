@@ -1,6 +1,5 @@
 import { ChangeEvent, useState, FC } from "react";
 import { Button, styled, TextField } from "@mui/material";
-import { Container } from "../App";
 
 const FILE_NAMES_STORAGE_KEY = "fNames";
 
@@ -138,6 +137,19 @@ const UploadedFile = styled("div")(`
   line-height: 16px;
 
   color: #CED9E9;
+`);
+
+const Container = styled("div")(`
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  width: 100%;
+  height: 100%;
+  min-height: 580px;
+
+  background: #192337;
+  border-radius: 8px;
 `);
 
 const UploadContainer = styled(Container)(`
